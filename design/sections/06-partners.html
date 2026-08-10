@@ -1,0 +1,88 @@
+<meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>
+.sec{height:990px;background:var(--paper)}
+/* color-blocked diptych — two flat fields meeting */
+.left{position:absolute;left:0;top:0;bottom:0;width:680px;z-index:1;
+  background:linear-gradient(190deg,#12161B 0%,#0C0F13 100%)}
+.right{position:absolute;left:680px;right:0;top:0;bottom:0;z-index:1;
+  background:linear-gradient(200deg,#F5F2EB 0%,#EAE5DA 100%)}
+.seam{position:absolute;left:680px;top:0;bottom:0;width:1px;background:rgba(198,154,78,.55);z-index:20}
+
+.L{position:absolute;left:0;top:0;bottom:0;width:680px;z-index:10;
+   padding:92px 76px 84px var(--pad);display:flex;flex-direction:column}
+.L h2{margin:26px 0 28px;color:var(--bone)}
+.L .foot{margin-top:auto}
+.meta{border-top:1px solid var(--hair-l2);padding-top:20px;display:flex;flex-direction:column;gap:12px}
+.mrow{display:flex;justify-content:space-between;font-family:'JetBrains Mono',monospace;font-size:12px}
+.mrow .k{color:rgba(233,229,220,.42)}
+.mrow .v{color:rgba(233,229,220,.86)}
+
+.R{position:absolute;left:680px;right:0;top:0;bottom:0;z-index:10;
+   padding:92px var(--pad) 84px 76px;display:flex;flex-direction:column}
+.trks{margin:auto 0}
+.trk{display:grid;grid-template-columns:52px 1fr 168px;gap:30px;align-items:start;
+     padding:32px 0;border-bottom:1px solid rgba(26,30,36,.14)}
+.trks .trk:first-child{border-top:1px solid rgba(26,30,36,.14)}
+.trk .n{font-family:'JetBrains Mono',monospace;font-size:12px;color:#A08A5E;padding-top:6px}
+.trk .h{font-family:'Golos Text',sans-serif;font-size:27px;font-weight:500;letter-spacing:-.022em;
+        color:#1A1E24;line-height:1.14;margin-bottom:10px}
+.trk .d{font-size:14.5px;line-height:1.55;color:#6E6759;font-weight:300;max-width:44ch}
+.trk .m{text-align:right;font-family:'JetBrains Mono',monospace;font-size:12px;color:#8B8474;
+        padding-top:8px;line-height:1.7}
+.trk .m b{display:block;color:#1A1E24;font-weight:500;font-size:13px}
+.support{margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end;gap:40px}
+</style>
+
+<section class="sec grain grain-soft">
+  <div class="left"></div><div class="right"></div><div class="seam"></div>
+
+  <div class="L">
+    <div class="lbl">Раздел 05 — Партнёрская программа</div>
+    <h2 class="d3">Дистрибуция<br>через тех, кому<br>уже доверяют</h2>
+    <p class="lead" style="max-width:34ch">Три трека с разной механикой вместо одной реферальной ссылки. Для крупных партнёров — процент с оборота, а не разовая выплата.</p>
+    <div class="foot">
+      <div class="meta">
+        <div class="mrow"><span class="k">Модель выплат</span><span class="v">Ревшара с оборота</span></div>
+        <div class="mrow"><span class="k">Проверка партнёра</span><span class="v">KYC с первого дня</span></div>
+        <div class="mrow"><span class="k">Атрибуция</span><span class="v">Длинный B2B-цикл</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="R on-light">
+    <div class="trks">
+    <div class="trk">
+      <span class="n">01</span>
+      <div>
+        <div class="h">Рефералы клиентов</div>
+        <div class="d">Брокер приводит брокера, суперквал — суперквала. Самый короткий и самый тёплый путь.</div>
+      </div>
+      <div class="m"><b>Разовое вознаграждение</b>простая механика</div>
+    </div>
+
+    <div class="trk">
+      <span class="n">02</span>
+      <div>
+        <div class="h">Профессиональные интродьюсеры</div>
+        <div class="d">Юридический и налоговый консалтинг, аудиторы, family offices и команды private banking.</div>
+      </div>
+      <div class="m"><b>Ревшара</b>отдельные материалы</div>
+    </div>
+
+    <div class="trk">
+      <span class="n">03</span>
+      <div>
+        <div class="h">Ресейл и white-label</div>
+        <div class="d">Вендоры торгового и бэк-офисного ПО: интеграция с нами «из коробки» снижает порог подключения.</div>
+      </div>
+      <div class="m"><b>Индивидуально</b>договорная модель</div>
+    </div>
+
+    </div>
+
+    <div class="support">
+      <p class="body" style="max-width:38ch">Партнёрская программа в финансовой сфере — зона повышенного внимания комплаенса. Условия обсуждаем предметно.</p>
+      <a class="cta cta-ghost">Стать партнёром <span class="arw">→</span></a>
+    </div>
+  </div>
+</section>

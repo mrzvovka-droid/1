@@ -1,0 +1,103 @@
+<meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>
+.sec{height:1100px;background:var(--graphite)}
+.bg{position:absolute;inset:0;z-index:0;
+  background:radial-gradient(70% 60% at 14% 84%, rgba(198,154,78,.07) 0%, transparent 62%),
+             linear-gradient(200deg,#161A20 0%,#12161B 60%,#0E1216 100%)}
+.wrap{position:relative;z-index:10;height:100%;padding:92px var(--pad);
+      display:grid;grid-template-columns:1fr 448px;gap:96px;align-items:center}
+
+/* ---- left: product UI panel stack ---- */
+.stack{position:relative;height:706px}
+.p{position:absolute;border:1px solid var(--hair-l);background:#0D1116;border-radius:3px;
+   box-shadow:0 40px 90px -30px rgba(0,0,0,.85)}
+.phead{display:flex;justify-content:space-between;align-items:center;padding:15px 22px;
+       border-bottom:1px solid var(--hair-l2)}
+.ptitle{font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:.13em;
+        text-transform:uppercase;color:rgba(233,229,220,.68)}
+.pill{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;
+      color:var(--brass);border:1px solid rgba(198,154,78,.34);padding:4px 10px;border-radius:2px}
+
+/* back panel — instrument rows */
+.p-back{left:0;top:0;width:604px;height:430px;background:#0B0E13}
+.irow{display:grid;grid-template-columns:1fr 118px 96px;gap:18px;padding:14px 22px;
+      border-bottom:1px solid var(--hair-l2);font-family:'JetBrains Mono',monospace;font-size:13px}
+.isym{color:rgba(233,229,220,.82);letter-spacing:.05em}
+.ipx{color:rgba(233,229,220,.60);text-align:right}
+.iup{color:#7FA88A;text-align:right}
+.idn{color:#B0796C;text-align:right}
+
+/* front panel — API console */
+.p-front{right:0;top:296px;width:690px;height:410px}
+.code{padding:22px 26px;font-family:'JetBrains Mono',monospace;font-size:13px;line-height:1.92}
+.c-k{color:#8FA6C4}.c-s{color:#C0AE84}.c-n{color:#9FB89A}.c-d{color:#525A63}
+.pfoot{position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:space-between;
+       align-items:center;padding:16px 26px;border-top:1px solid var(--hair-l2)}
+
+/* small chip panel */
+.p-chip{left:0;top:462px;width:276px;height:114px;background:#10151B;
+        display:flex;flex-direction:column;justify-content:center;padding:0 22px;gap:8px}
+.chipval{font-family:'Golos Text',sans-serif;font-size:34px;font-weight:500;letter-spacing:-.03em}
+
+/* ---- right: caption column ---- */
+.cap h2{margin:26px 0 26px}
+.list{margin:40px 0 44px;border-top:1px solid var(--hair-l2)}
+.li{display:flex;gap:18px;padding:19px 0;border-bottom:1px solid var(--hair-l2)}
+.li .n{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--brass);padding-top:4px}
+.li .t{font-size:16px;line-height:1.5;color:rgba(233,229,220,.80);font-weight:300}
+</style>
+
+<section class="sec grain">
+  <div class="bg"></div>
+  <div class="wrap">
+
+    <div class="stack">
+      <div class="p p-back">
+        <div class="phead"><span class="ptitle">Стакан · спот</span><span class="pill">Реестр ЦБ</span></div>
+        <div class="irow"><span class="isym">BTC / RUB</span><span class="ipx">8 214 500</span><span class="iup">+1.24</span></div>
+        <div class="irow"><span class="isym">ETH / RUB</span><span class="ipx">402 180</span><span class="iup">+0.86</span></div>
+        <div class="irow"><span class="isym">USDT / RUB</span><span class="ipx">94.12</span><span class="idn">−0.11</span></div>
+        <div class="irow"><span class="isym">BTC / USDT</span><span class="ipx">87 260.40</span><span class="iup">+1.31</span></div>
+        <div class="irow"><span class="isym">ETH / USDT</span><span class="ipx">4 271.05</span><span class="idn">−0.42</span></div>
+        <div class="irow" style="border-bottom:0"><span class="isym">TON / RUB</span><span class="ipx">486.90</span><span class="iup">+2.07</span></div>
+      </div>
+
+      <div class="p p-chip">
+        <span class="lbl">Срок подключения</span>
+        <span class="chipval">от 14 дней</span>
+      </div>
+
+      <div class="p p-front">
+        <div class="phead"><span class="ptitle">POST /v1/orders</span><span class="pill">Sandbox</span></div>
+        <div class="code">
+<span class="c-d">// сегрегированный счёт брокера</span><br>
+{<br>
+&nbsp;&nbsp;<span class="c-k">"broker_id"</span>: <span class="c-s">"BR-0412"</span>,<br>
+&nbsp;&nbsp;<span class="c-k">"client_type"</span>: <span class="c-s">"qualified"</span>,<br>
+&nbsp;&nbsp;<span class="c-k">"instrument"</span>: <span class="c-s">"BTC/RUB"</span>,<br>
+&nbsp;&nbsp;<span class="c-k">"side"</span>: <span class="c-s">"buy"</span>,<br>
+&nbsp;&nbsp;<span class="c-k">"qty"</span>: <span class="c-n">0.75</span>,<br>
+&nbsp;&nbsp;<span class="c-k">"report"</span>: <span class="c-s">"cbr_daily"</span><br>
+}
+        </div>
+        <div class="pfoot">
+          <span class="lbl">FIX 4.4 · REST · WebSocket</span>
+          <span class="lbl lbl-brass">200 OK · 38 мс</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cap">
+      <div class="lbl">Раздел 02 — Брокерам</div>
+      <h2 class="d3">Подключение,<br>которое проходит<br>комплаенс</h2>
+      <p class="body">Сегрегированный учёт клиентских активов, выгрузки под требования ЦБ и песочница до подписания договора.</p>
+      <div class="list">
+        <div class="li"><span class="n">01</span><span class="t">Пакет документов для проверки контрагента — до первой встречи</span></div>
+        <div class="li"><span class="n">02</span><span class="t">Тарифная модель и расчёт экономики на ваших объёмах</span></div>
+        <div class="li"><span class="n">03</span><span class="t">Выделенный менеджер и квартальные бизнес-ревью</span></div>
+      </div>
+      <a class="cta cta-ghost">Открыть техдокументацию <span class="arw">→</span></a>
+    </div>
+
+  </div>
+</section>

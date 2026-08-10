@@ -1,0 +1,83 @@
+<meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>
+.sec{height:990px;background:var(--ink)}
+.field{position:absolute;inset:0;z-index:0;
+  background:
+    radial-gradient(80% 80% at 88% 12%, rgba(198,154,78,.11) 0%, transparent 58%),
+    linear-gradient(160deg,#0C0E11 0%,#0F1318 58%,#0A0C10 100%)}
+.grid{position:absolute;inset:0;z-index:1;opacity:.5;
+  background-image:linear-gradient(90deg,var(--hair-l2) 1px,transparent 1px);
+  background-size:146.6px 100%}
+
+/* second-read moment: one oversized numeral carrying structure */
+.bigdate{position:absolute;right:56px;top:132px;z-index:2;
+  font-family:'Golos Text',sans-serif;font-weight:600;font-size:206px;line-height:.84;
+  letter-spacing:-.05em;color:transparent;
+  -webkit-text-stroke:1.4px rgba(198,154,78,.34);text-align:right}
+.bigdate em{display:block;font-style:normal;font-size:206px}
+.bigcap{position:absolute;right:var(--pad);top:520px;z-index:3;text-align:right;width:520px}
+
+.wrap{position:relative;z-index:10;height:100%;padding:88px var(--pad) 76px;display:flex;flex-direction:column}
+.top{display:flex;justify-content:space-between;align-items:flex-start}
+.lede{max-width:790px}
+h2{margin:26px 0 28px;font-size:76px}
+.note{display:flex;gap:16px;margin-top:32px;padding-top:24px;border-top:1px solid var(--hair-l2);max-width:660px}
+.note .bar{width:2px;background:var(--brass);flex:none}
+
+.timeline{margin-top:auto;border-top:1px solid var(--hair-l)}
+.trow{display:grid;grid-template-columns:180px 1fr 430px;gap:44px;align-items:center;
+      padding:21px 0;border-bottom:1px solid var(--hair-l2)}
+.trow:last-child{border-bottom:0}
+.tdate{font-family:'JetBrains Mono',monospace;font-size:15px;color:var(--bone);letter-spacing:.02em}
+.tname{font-family:'Golos Text',sans-serif;font-size:20px;font-weight:500;letter-spacing:-.015em}
+.tdesc{font-size:14.5px;color:var(--muted-d);font-weight:300;line-height:1.5}
+.now{color:var(--brass)}
+.now .tname{color:var(--brass)}
+.foot{margin-top:26px;display:flex;justify-content:space-between;align-items:center}
+</style>
+
+<section class="sec grain">
+  <div class="field"></div><div class="grid"></div>
+
+  <div class="bigdate">01.07<em>2027</em></div>
+  <div class="bigcap">
+    <div class="lbl lbl-brass">Ответственность за операции вне лицензированной инфраструктуры</div>
+  </div>
+
+  <div class="wrap">
+    <div class="top">
+      <div class="lede">
+        <div class="lbl">Раздел 01 — Регуляторный контур</div>
+        <h2 class="d2">Окно, в котором<br>рынок выбирает<br>площадку</h2>
+        <p class="lead">282-ФЗ и закон-спутник 283-ФЗ вступают в силу 1 сентября 2026 года. До 1 июля 2027-го посредники обязаны получить лицензии и войти в реестр Банка России. Всё, что не успело — работает вне закона.</p>
+        <div class="note">
+          <div class="bar"></div>
+          <p class="body" style="max-width:none">Криптовалюта признана имуществом. Сделки — только через лицензированных посредников. Расчёты криптовалютой внутри страны и их реклама остаются под запретом.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="trow">
+        <div class="tdate">04.08.2026</div>
+        <div class="tname">Закон подписан</div>
+        <div class="tdesc">282-ФЗ и закон-спутник 283-ФЗ</div>
+      </div>
+      <div class="trow now">
+        <div class="tdate">01.09.2026</div>
+        <div class="tname">Основные положения в силе</div>
+        <div class="tdesc">Начало переходного периода — мы уже внутри него</div>
+      </div>
+      <div class="trow">
+        <div class="tdate">01.07.2027</div>
+        <div class="tname">Переходный период закрыт</div>
+        <div class="tdesc">Лицензия и реестр ЦБ — условие работы, а не преимущество</div>
+      </div>
+    </div>
+
+    <div class="foot">
+      <span class="lbl">Обновляется по мере выхода подзаконных актов</span>
+      <a class="cta cta-link">Разбор регулирования простым языком <span class="arw">→</span></a>
+    </div>
+  </div>
+</section>

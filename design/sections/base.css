@@ -1,0 +1,92 @@
+/* ==========================================================================
+   ОСЬ — design comp system
+   Theme: Deep Dark Mode + Quiet Premium Neutral counterpoint
+   Type:  Swiss rational sans, very strong hierarchy
+   Spine: Archive / dossier
+   ========================================================================== */
+
+:root{
+  --ink:      #0C0E11;
+  --graphite: #14181D;
+  --slate:    #1D232A;
+  --bone:     #E9E5DC;
+  --paper:    #F3F0E9;
+  --sand:     #DCD5C7;
+  --muted:    #8A9199;
+  --muted-d:  #5C636B;
+  --brass:    #C69A4E;
+
+  --hair-l: rgba(233,229,220,.13);
+  --hair-l2: rgba(233,229,220,.07);
+  --hair-d: rgba(12,14,17,.16);
+  --hair-d2: rgba(12,14,17,.08);
+
+  --pad: 104px;
+  --r: 2px;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1760px;overflow:hidden}
+body{
+  font-family:'Inter',system-ui,sans-serif;
+  background:var(--ink);
+  color:var(--bone);
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+.sec{position:relative;width:1760px;overflow:hidden;isolation:isolate}
+
+/* ---------- grain / material ---------- */
+.grain::after{
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:40;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='240' height='240' filter='url(%23n)' opacity='.55'/></svg>");
+  opacity:.055;mix-blend-mode:overlay;
+}
+.grain-soft::after{opacity:.032}
+
+/* ---------- typography ---------- */
+.d1,.d2,.d3,.d4{font-family:'Golos Text',sans-serif;font-weight:500;letter-spacing:-.028em;line-height:.98}
+.d1{font-size:112px}
+.d2{font-size:84px}
+.d3{font-size:58px;line-height:1.02}
+.d4{font-size:40px;line-height:1.06;letter-spacing:-.022em}
+
+.lead{font-size:21px;line-height:1.52;color:var(--muted);font-weight:300;max-width:52ch}
+.body{font-size:16.5px;line-height:1.62;color:var(--muted);font-weight:300}
+.on-light .lead,.on-light .body{color:#5C636B}
+
+.lbl{
+  font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:500;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--muted-d);
+}
+.on-light .lbl{color:#8A8578}
+.lbl-brass{color:var(--brass)}
+
+.mono{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.04em}
+
+/* ---------- rails, hairlines ---------- */
+.rail{position:absolute;top:0;bottom:0;width:1px;background:var(--hair-l);z-index:5}
+.rail-d{background:var(--hair-d2)}
+.hr{height:1px;background:var(--hair-l);border:0}
+.on-light .hr{background:var(--hair-d2)}
+
+/* ---------- chrome (top nav strip on hero) ---------- */
+.nav{display:flex;align-items:center;justify-content:space-between;gap:40px}
+.mark{font-family:'Golos Text',sans-serif;font-weight:600;font-size:19px;letter-spacing:.30em}
+.navlinks{display:flex;gap:34px}
+.navlinks span{font-size:13.5px;color:rgba(233,229,220,.62);font-weight:300}
+
+/* ---------- CTA family ---------- */
+.cta{display:inline-flex;align-items:center;gap:11px;font-size:15px;font-weight:500;
+     font-family:'Inter',sans-serif;border-radius:var(--r);white-space:nowrap}
+.cta-primary{background:var(--brass);color:#15100A;padding:16px 28px}
+.cta-ghost{border:1px solid var(--hair-l);color:var(--bone);padding:15px 26px;background:transparent}
+.on-light .cta-ghost{border-color:rgba(12,14,17,.22);color:var(--ink)}
+.cta-link{color:var(--brass);border-bottom:1px solid rgba(198,154,78,.42);padding-bottom:4px;border-radius:0}
+.cta-cap{font-size:13.5px;color:var(--muted);font-weight:300}
+.arw{font-size:13px;opacity:.85;transform:translateY(.5px)}
+
+/* ---------- surfaces ---------- */
+.on-light{background:var(--paper);color:var(--ink)}
+.panel{background:var(--graphite);border:1px solid var(--hair-l2)}

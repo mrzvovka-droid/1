@@ -1,0 +1,91 @@
+<meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>
+.sec{height:880px;background:#07090B}
+.field{position:absolute;inset:0;z-index:0;
+  background:
+    radial-gradient(96% 74% at 50% 118%, rgba(198,154,78,.24) 0%, rgba(198,154,78,.05) 34%, transparent 64%),
+    linear-gradient(180deg,#0E1216 0%,#0A0D11 46%,#06080A 100%)}
+.lines{position:absolute;inset:0;z-index:1;
+  background-image:linear-gradient(90deg,var(--hair-l2) 1px,transparent 1px);
+  background-size:146.6px 100%;
+  -webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,.85),transparent 70%)}
+.wrap{position:relative;z-index:10;height:100%;padding:88px 0 0;display:flex;flex-direction:column}
+
+.top{padding:0 var(--pad);text-align:center}
+.top h2{margin:26px auto 26px;max-width:20ch}
+.top .lead{margin:0 auto;text-align:center;max-width:58ch}
+
+/* banner-style full-width CTA */
+.banner{margin-top:64px;border-top:1px solid var(--hair-l);border-bottom:1px solid var(--hair-l);
+  background:linear-gradient(90deg,rgba(198,154,78,.09),rgba(198,154,78,.03) 60%,transparent);
+  padding:38px var(--pad);display:flex;align-items:center;justify-content:space-between;gap:48px}
+.banner .t{font-family:'Golos Text',sans-serif;font-size:30px;font-weight:500;
+  letter-spacing:-.024em;color:var(--bone)}
+.banner .s{font-size:14.5px;color:var(--muted-d);font-weight:300;margin-top:8px}
+.bact{display:flex;align-items:center;gap:16px;flex:none}
+
+/* footer */
+.foot{margin-top:auto;padding:44px var(--pad) 40px;border-top:1px solid var(--hair-l2)}
+.frow{display:grid;grid-template-columns:280px repeat(3,1fr) 300px;gap:48px;align-items:start}
+.fcol .h{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.16em;
+         text-transform:uppercase;color:var(--muted-d);margin-bottom:16px}
+.fcol a{display:block;font-size:14px;color:rgba(233,229,220,.66);font-weight:300;padding:5px 0}
+.fmark{font-family:'Golos Text',sans-serif;font-weight:600;font-size:19px;letter-spacing:.30em;
+       color:var(--bone);margin-bottom:16px}
+.legal{font-size:12.5px;line-height:1.6;color:#4C535B;font-weight:300}
+.bottom{margin-top:36px;padding-top:22px;border-top:1px solid var(--hair-l2);
+        display:flex;justify-content:space-between;align-items:center}
+</style>
+
+<section class="sec grain">
+  <div class="field"></div><div class="lines"></div>
+  <div class="wrap">
+
+    <div class="top">
+      <span class="lbl lbl-brass">До конца переходного периода</span>
+      <h2 class="d2">Рынок выбирает<br>площадку сейчас</h2>
+      <p class="lead">Позже выбор будет сделан без вас. Начните с пакета документов — он отвечает на вопросы руководителя, технолога и комплаенс-офицера.</p>
+    </div>
+
+    <div class="banner">
+      <div>
+        <div class="t">Запросить доступ к песочнице</div>
+        <div class="s">Ответ в течение рабочего дня · демо-стенд и спецификации API</div>
+      </div>
+      <div class="bact">
+        <a class="cta cta-ghost">Поговорить с командой</a>
+        <a class="cta cta-primary">Запросить доступ <span class="arw">→</span></a>
+      </div>
+    </div>
+
+    <div class="foot">
+      <div class="frow">
+        <div class="fcol">
+          <div class="fmark">ОСЬ</div>
+          <div class="legal">Биржа цифровых активов.<br>Лицензия и реестр Банка России.</div>
+        </div>
+        <div class="fcol">
+          <div class="h">Клиентам</div>
+          <a>Брокерам</a><a>Суперквалам</a><a>Тарифы</a>
+        </div>
+        <div class="fcol">
+          <div class="h">Технологии</div>
+          <a>Документация API</a><a>Песочница</a><a>Статус систем</a>
+        </div>
+        <div class="fcol">
+          <div class="h">Знания</div>
+          <a>Академия</a><a>Research</a><a>Дайджест</a>
+        </div>
+        <div class="fcol">
+          <div class="h">Правовая информация</div>
+          <div class="legal">Материалы носят информационный характер и не являются индивидуальной инвестиционной рекомендацией. Расчёты цифровой валютой на территории России запрещены.</div>
+        </div>
+      </div>
+      <div class="bottom">
+        <span class="lbl">282-ФЗ · 283-ФЗ · переходный период до 01.07.2027</span>
+        <span class="lbl">Раздел 07 — Контакт</span>
+      </div>
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,36 @@
+<meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>
+.sec{height:700px;background:#EFEBE2}
+.tex{position:absolute;inset:0;z-index:0;
+  background:radial-gradient(70% 100% at 50% 0%, #F7F4EE 0%, #EDE9DF 58%, #E3DED2 100%)}
+/* vertical rhythm lines — order, quietly stated */
+.lines{position:absolute;inset:0;z-index:1;
+  background-image:linear-gradient(90deg,rgba(26,30,36,.055) 1px,transparent 1px);
+  background-size:146.6px 100%;
+  -webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,.9),transparent 62%)}
+.wrap{position:relative;z-index:10;height:100%;padding:56px var(--pad) 52px;
+      display:flex;flex-direction:column;align-items:center;text-align:center}
+.topbar{width:100%;display:flex;justify-content:space-between}
+.mid{margin:auto 0;max-width:1180px}
+h2{color:#191D23;letter-spacing:-.032em}
+.hint{margin-top:44px;display:flex;flex-direction:column;align-items:center;gap:12px}
+.rule{width:1px;height:34px;background:rgba(26,30,36,.22)}
+</style>
+
+<section class="sec grain grain-soft on-light">
+  <div class="tex"></div><div class="lines"></div>
+  <div class="wrap">
+    <div class="topbar">
+      <span class="lbl">Раздел 06 — Публичная экспертиза</span>
+      <span class="lbl">Регулирование · Технологии · Данные рынка</span>
+    </div>
+
+    <div class="mid">
+      <h2 class="d2">Решения принимают<br>в отношении людей,<br>а не логотипов</h2>
+      <div class="hint">
+        <div class="rule"></div>
+        <a class="cta cta-link" style="font-size:14px">Спикеры и темы выступлений</a>
+      </div>
+    </div>
+  </div>
+</section>

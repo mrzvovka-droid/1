@@ -1,0 +1,93 @@
+<meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>
+.sec{height:990px;background:#07090C}
+/* --- atmospheric field: graded sky + low horizon glow --- */
+.sky{position:absolute;inset:0;z-index:0;
+  background:
+    radial-gradient(105% 62% at 74% 100%, rgba(198,154,78,.34) 0%, rgba(198,154,78,.10) 30%, transparent 60%),
+    radial-gradient(80% 55% at 22% 4%, rgba(126,150,178,.16) 0%, transparent 58%),
+    linear-gradient(178deg,#090C10 0%,#0B0F14 42%,#12171D 76%,#1A1F26 100%);
+}
+/* --- monolith cluster (Москва-Сити silhouette, art-directed) --- */
+.city{position:absolute;right:0;bottom:0;width:1120px;height:1010px;z-index:1}
+.t{position:absolute;bottom:0;
+   background:linear-gradient(180deg,#1B222B 0%,#11161C 46%,#090C10 100%);
+   border-left:1px solid rgba(233,229,220,.10);border-top:1px solid rgba(233,229,220,.16)}
+.t::after{content:"";position:absolute;inset:0;opacity:.85;
+   background-image:linear-gradient(rgba(198,154,78,.20) 1px,transparent 1px),
+                    linear-gradient(90deg,rgba(198,154,78,.13) 1px,transparent 1px);
+   background-size:100% 27px, 23px 100%;
+   -webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 26%,#000 100%)}
+.fade{position:absolute;inset:0;z-index:2;
+  background:linear-gradient(93deg,#07090C 6%,rgba(7,9,12,.90) 30%,rgba(7,9,12,.40) 54%,rgba(7,9,12,.06) 76%,transparent 100%)}
+.vign{position:absolute;inset:0;z-index:3;
+  background:radial-gradient(135% 105% at 34% 58%,transparent 44%,rgba(4,5,7,.66) 100%)}
+
+.wrap{position:relative;z-index:10;height:100%;padding:52px var(--pad) 84px;display:flex;flex-direction:column}
+.navbar{padding-bottom:26px;border-bottom:1px solid var(--hair-l2)}
+
+.block{margin-top:auto}
+.eyebrow{display:flex;align-items:center;gap:14px;margin-bottom:40px}
+.dot{width:6px;height:6px;background:var(--brass);border-radius:50%}
+h1{margin:0 0 38px;font-size:104px}
+.h1b{display:block;color:rgba(233,229,220,.42)}
+.sub{max-width:57ch;margin-bottom:54px}
+.actions{display:flex;align-items:center;gap:18px}
+
+/* index rail — dossier spine */
+.idxbg{position:absolute;right:0;bottom:0;width:720px;height:340px;z-index:9;
+  background:linear-gradient(300deg,rgba(6,8,11,.94) 22%,rgba(6,8,11,.55) 58%,transparent 88%)}
+.idx{position:absolute;right:var(--pad);bottom:84px;z-index:10}
+.idx .row{display:flex;justify-content:space-between;gap:26px;padding:12px 0;
+          border-top:1px solid var(--hair-l2);width:392px;white-space:nowrap}
+.idx .k{color:rgba(233,229,220,.42)}
+.idx .v{color:rgba(233,229,220,.86)}
+</style>
+
+<section class="sec grain">
+  <div class="sky"></div>
+  <div class="city">
+    <div class="t" style="left:14px;  width:74px;  height:498px"></div>
+    <div class="t" style="left:96px;  width:196px; height:742px"></div>
+    <div class="t" style="left:300px; width:88px;  height:604px"></div>
+    <div class="t" style="left:396px; width:238px; height:1010px"></div>
+    <div class="t" style="left:642px; width:70px;  height:668px"></div>
+    <div class="t" style="left:720px; width:154px; height:868px"></div>
+    <div class="t" style="left:882px; width:96px;  height:566px"></div>
+    <div class="t" style="left:986px; width:134px; height:1010px"></div>
+  </div>
+  <div class="fade"></div><div class="vign"></div><div class="idxbg"></div>
+
+  <div class="wrap">
+    <div class="navbar nav">
+      <div class="mark">ОСЬ</div>
+      <div class="navlinks">
+        <span>Брокерам</span><span>Суперквалам</span><span>Академия</span>
+        <span>Партнёрам</span><span>Регулирование</span>
+      </div>
+      <div class="lbl">Реестр ЦБ · 282-ФЗ</div>
+    </div>
+
+    <div class="block">
+      <div class="eyebrow">
+        <span class="dot"></span>
+        <span class="lbl">Лицензированная инфраструктура цифровых активов</span>
+      </div>
+      <h1 class="d1">
+        Цифровые активы
+        <span class="h1b">в правовом контуре</span>
+      </h1>
+      <p class="lead sub">Биржа для брокеров и суперквалифицированных инвесторов. Расчёты, хранение и отчётность построены под требования 282-ФЗ — до конца переходного периода, а не после него.</p>
+      <div class="actions">
+        <a class="cta cta-primary">Запросить доступ <span class="arw">→</span></a>
+        <a class="cta cta-ghost">Пакет для due diligence</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="idx">
+    <div class="row mono"><span class="k">Переходный период до</span><span class="v">01.07.2027</span></div>
+    <div class="row mono"><span class="k">Сегменты доступа</span><span class="v">B2B · суперквалы</span></div>
+    <div class="row mono"><span class="k">Подключение</span><span class="v">FIX · REST · WebSocket</span></div>
+  </div>
+</section>

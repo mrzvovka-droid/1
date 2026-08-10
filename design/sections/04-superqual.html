@@ -1,0 +1,73 @@
+<meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>
+.sec{height:990px;background:var(--sand)}
+/* full-bleed graded field — warm, quiet, private-banking calm */
+.field{position:absolute;inset:0;z-index:0;
+  background:
+    radial-gradient(66% 62% at 50% 26%, #F6F3EC 0%, #E7E1D4 42%, #D2C9B7 74%, #BEB3A0 100%)}
+.vign{position:absolute;inset:0;z-index:2;
+  background:radial-gradient(120% 96% at 50% 34%, transparent 40%, rgba(96,86,68,.30) 100%)}
+/* axis motif — the brand mark as structure, not decoration */
+.arc{position:absolute;left:50%;top:104px;transform:translateX(-50%);z-index:1;
+     width:640px;height:640px;border-radius:50%;border:1px solid rgba(96,86,68,.26)}
+.arc2{position:absolute;left:50%;top:186px;transform:translateX(-50%);z-index:1;
+     width:476px;height:476px;border-radius:50%;border:1px solid rgba(96,86,68,.15)}
+.axis{position:absolute;left:50%;top:104px;width:1px;height:268px;z-index:1;
+      background:linear-gradient(180deg,transparent,rgba(96,86,68,.42) 30%,rgba(96,86,68,.42) 70%,transparent)}
+.horizon{position:absolute;left:var(--pad);right:var(--pad);top:424px;height:1px;z-index:1;
+      background:linear-gradient(90deg,transparent,rgba(96,86,68,.30) 22%,rgba(96,86,68,.30) 78%,transparent)}
+
+.wrap{position:relative;z-index:10;height:100%;padding:56px var(--pad) 84px;
+      display:flex;flex-direction:column;align-items:center;text-align:center}
+.topbar{width:100%;display:flex;justify-content:space-between}
+.block{margin-top:auto;max-width:920px;width:100%}
+h2{margin:24px 0 30px;color:#20242A}
+.sub{margin:0 auto 46px;color:#5A5346;max-width:60ch}
+.capcta{display:flex;flex-direction:column;align-items:center;gap:14px}
+.hairsep{width:44px;height:1px;background:rgba(96,86,68,.42);margin:0 auto 26px}
+.tags{display:flex;gap:0;margin-top:58px;border-top:1px solid rgba(96,86,68,.22);
+      width:1552px;margin-left:calc((920px - 1552px)/2)}
+.tag{flex:1;padding:22px 26px 0;text-align:left;border-right:1px solid rgba(96,86,68,.16)}
+.tag:last-child{border-right:0}
+.tag .h{font-family:'Golos Text',sans-serif;font-size:18px;font-weight:500;color:#20242A;
+        letter-spacing:-.015em;margin-bottom:8px}
+.tag .d{font-size:14px;line-height:1.5;color:#6B6455;font-weight:300}
+</style>
+
+<section class="sec grain grain-soft on-light">
+  <div class="field"></div>
+  <div class="arc"></div><div class="arc2"></div><div class="axis"></div>
+  <div class="vign"></div>
+
+  <div class="wrap">
+    <div class="topbar">
+      <span class="lbl">Раздел 03 — Суперквалифицированным инвесторам</span>
+      <span class="lbl">Доступ по приглашению</span>
+    </div>
+
+    <div class="block">
+      <div class="hairsep"></div>
+      <h2 class="d2">Без лимитов —<br>и без публичности</h2>
+      <p class="lead sub">Прямой доступ к ликвидности, персональный менеджер и отчётность, которую принимает ваш налоговый консультант. Разговор начинается не с продукта, а с вашей структуры владения.</p>
+      <div class="capcta">
+        <a class="cta cta-primary">Назначить встречу</a>
+        <span class="cta-cap" style="color:#6B6455">Закрытые форматы: клубные встречи на 15–30 человек</span>
+      </div>
+
+      <div class="tags">
+        <div class="tag">
+          <div class="h">Тестирование, а не лимит</div>
+          <div class="d">Статус квалифицированного инвестора снимает ограничения по объёму</div>
+        </div>
+        <div class="tag">
+          <div class="h">Хранение</div>
+          <div class="d">Сегрегированные счета и раскрытие схемы хранения активов</div>
+        </div>
+        <div class="tag">
+          <div class="h">Сопровождение</div>
+          <div class="d">Юридический и налоговый партнёр на стороне клиента</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
