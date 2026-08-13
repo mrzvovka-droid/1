@@ -86,7 +86,7 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
   transition: background-color .28s var(--ease), transform .28s var(--ease), color .28s var(--ease);
 }
 .btn--primary { --btn-bg: var(--orange); --btn-fg: var(--ink); }
-.btn--primary:hover { --btn-bg: var(--orange-deep); --btn-fg: var(--paper); transform: translateY(-2px); }
+.btn--primary:hover { --btn-bg: var(--ink); --btn-fg: var(--orange); transform: translateY(-2px); }
 .btn--ghost { border-color: var(--ink); }
 .btn--ghost:hover { background: var(--ink); color: var(--paper); transform: translateY(-2px); }
 .btn--sm { padding: .625rem 1.125rem; font-size: .875rem; }
@@ -135,9 +135,9 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
 /* The band sits exactly where the route rail begins, so the hero road and the
    route are one road rather than two drawings of one. */
 .hero__road::before {
-  content: ""; position: absolute; left: 0; top: 34%; bottom: -4%;
+  content: ""; position: absolute; left: 0; top: 18%; bottom: -4%;
   width: var(--rail);
-  background-image: var(--chevron-sand);
+  background-image: var(--chevron-orange);
   background-size: 100% auto; background-repeat: repeat-y;
   -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 26%);
   mask-image: linear-gradient(to bottom, transparent 0%, #000 26%);
@@ -153,6 +153,8 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
 }
 
 .hero__title {
+  position: relative; z-index: 1;
+  margin-left: calc(-1 * (var(--rail) + clamp(1.25rem, 3vw, 2.5rem)));
   font-size: clamp(2.75rem, 9.2vw, 6rem);
   line-height: .88; letter-spacing: -0.028em;
   margin-bottom: 1.75rem;
@@ -167,8 +169,7 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
   max-width: var(--wrap); margin: clamp(2.5rem, 6vw, 4.5rem) auto 0;
   padding-left: calc(var(--rail) + clamp(1.25rem, 3vw, 2.5rem));
   padding-bottom: clamp(1.5rem, 3vw, 2.5rem);
-  font-family: Oswald, sans-serif; font-size: .75rem; letter-spacing: .3em;
-  text-transform: uppercase; color: var(--ink-soft);
+  font-size: .8125rem; color: var(--ink-soft);
 }
 .hero__start span { display: inline-flex; align-items: center; gap: .75rem; }
 .hero__start span::after { content: ""; width: 64px; height: 1px; background: var(--line); }
@@ -183,8 +184,7 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
 }
 .slot__tag {
   display: inline-block; margin-bottom: .5rem;
-  font-family: Oswald, sans-serif; font-size: .625rem; letter-spacing: .26em;
-  text-transform: uppercase; color: var(--orange-deep);
+  font-size: .75rem; font-weight: 600; color: #a83a0b;
 }
 .slot__note { font-size: .875rem; color: var(--ink-soft); margin: 0; max-width: 30ch; }
 
@@ -209,7 +209,7 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
   background-size: 100% auto; background-repeat: repeat-y;
 }
 .road__fill {
-  position: absolute; inset: 0 0 auto 0; height: var(--progress, 0%);
+  position: absolute; inset: 0 0 auto 0; height: 0;
   background-image: var(--chevron-orange);
   background-size: 100% auto; background-repeat: repeat-y;
   overflow: hidden;
@@ -323,8 +323,7 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
 .signup__contacts { list-style: none; margin: 2.5rem 0 0; padding: 0; display: grid; gap: 1.125rem; }
 .signup__contacts li { display: grid; gap: .1875rem; }
 .signup__label {
-  font-family: Oswald, sans-serif; font-size: .6875rem; letter-spacing: .26em;
-  text-transform: uppercase; color: color-mix(in srgb, var(--sand) 75%, var(--ink));
+  font-size: .8125rem; color: color-mix(in srgb, var(--sand) 82%, var(--ink));
 }
 .signup__contacts a { color: var(--paper); }
 .signup [data-placeholder] { color: var(--sand); }
@@ -334,8 +333,7 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
 .field { margin-bottom: 1rem; }
 .field label {
   display: block; margin-bottom: .4375rem;
-  font-family: Oswald, sans-serif; font-size: .6875rem; letter-spacing: .22em;
-  text-transform: uppercase; color: var(--sand);
+  font-size: .8125rem; color: var(--sand);
 }
 .field input {
   width: 100%; padding: .9375rem 1rem;
@@ -365,7 +363,7 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
 .foot__brand .logo__sup { display: block; color: var(--sand); }
 .foot__tag { margin-top: 1.25rem; font-family: Oswald, sans-serif; text-transform: uppercase; font-size: .9375rem; letter-spacing: .04em; line-height: 1.5; color: var(--sand); }
 .foot__nav { display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); gap: 2rem; }
-.foot__nav h3 { font-size: .6875rem; letter-spacing: .26em; color: color-mix(in srgb, var(--sand) 70%, var(--ink)); margin-bottom: 1rem; font-weight: 500; }
+.foot__nav h3 { font-size: .8125rem; letter-spacing: 0; text-transform: none; color: color-mix(in srgb, var(--sand) 78%, var(--ink)); margin-bottom: 1rem; font-weight: 500; }
 .foot__nav ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .625rem; }
 .foot__nav a { color: var(--paper); text-decoration: none; font-size: .9375rem; }
 .foot__nav a:hover { text-decoration: underline; }
@@ -375,13 +373,11 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
    Nothing is hidden waiting for JS. Elements ship visible; the animation only
    plays for the ones the observer catches on their way into the viewport. */
 @media (prefers-reduced-motion: no-preference) {
-  .stop[data-seen] .stop__body,
-  .facts__item[data-seen],
-  .review[data-seen] { animation: rise .7s var(--ease) both; }
+  .stop[data-seen] .stop__body { animation: pull-in .68s var(--ease) both; }
 }
-@keyframes rise {
-  from { opacity: 0; transform: translateY(20px); filter: blur(3px); }
-  to { opacity: 1; transform: none; filter: blur(0); }
+@keyframes pull-in {
+  from { opacity: 0; transform: translateX(-22px); }
+  to { opacity: 1; transform: none; }
 }
 
 /* ---------- responsive ---------- */
@@ -396,8 +392,14 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
 
 @media (max-width: 640px) {
   :root { --rail: 28px; }
-  .nav__links { display: none; }
+  .nav { flex-wrap: wrap; row-gap: .625rem; padding-bottom: .75rem; }
   .nav .btn--sm { margin-left: auto; }
+  .nav__links {
+    order: 3; width: 100%; margin-left: 0;
+    justify-content: space-between; gap: .5rem;
+    padding-top: .625rem; border-top: 1px solid var(--line);
+  }
+  .nav__links a { font-size: .8125rem; letter-spacing: 0; }
   .road,
   .hero__inner,
   .hero__start { padding-left: calc(var(--rail) + 1rem); }
@@ -410,5 +412,5 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; }
-  .js .stop__body, .js .facts__item, .js .review { opacity: 1; transform: none; }
+  .stop__body { opacity: 1; transform: none; }
 }

@@ -29,7 +29,11 @@
     var eye = window.innerHeight * 0.58;
     var travelled = eye - box.top;
     var pct = Math.max(0, Math.min(1, travelled / box.height));
-    fill.style.setProperty('--progress', (pct * 100).toFixed(2) + '%');
+    // The chevron tile is 40x30 in the source SVG and is drawn at the rail's width,
+    // so snapping to whole tiles keeps the driven edge on a finished shape.
+    var tile = road.querySelector('.road__track').getBoundingClientRect().width * 0.75;
+    var travelledPx = pct * box.height;
+    fill.style.height = (tile > 0 ? Math.round(travelledPx / tile) * tile : travelledPx) + 'px';
 
     for (var i = 0; i < stops.length; i++) {
       var marker = stops[i].querySelector('.stop__marker');
