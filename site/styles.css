@@ -201,7 +201,26 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
 .route__head h2 { font-size: clamp(1.75rem, 4.2vw, 3rem); margin-bottom: .875rem; }
 .route__head p { color: var(--ink-soft); font-size: 1.125rem; }
 
-.road { position: relative; max-width: var(--wrap); margin: 0 auto; padding-left: calc(var(--rail) + clamp(1.25rem, 3vw, 2.5rem)); }
+.road {
+  position: relative; max-width: var(--wrap); margin: 0 auto;
+  padding-left: calc(var(--rail) + clamp(1.25rem, 3vw, 2.5rem));
+  padding-bottom: calc(var(--rail) + 2.5rem);
+}
+
+/* The route terminates on a finish line rather than trailing off with the list. */
+.road__finish { position: absolute; left: 0; right: 0; bottom: 0; height: var(--rail); }
+.road__finish::before {
+  content: ""; position: absolute; left: 0; top: 0;
+  width: var(--rail); height: var(--rail);
+  background: var(--orange); border-radius: 3px;
+}
+.road__finish::after {
+  content: ""; position: absolute;
+  left: calc(var(--rail) + clamp(1.25rem, 3vw, 2.5rem)); right: 0;
+  top: calc(var(--rail) / 2); height: 2px; background: var(--orange);
+}
+
+.finish-cta { margin-top: 1.75rem; }
 
 .road__track {
   position: absolute; left: 0; top: 0; bottom: 0; width: var(--rail);
@@ -384,6 +403,7 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
 @media (max-width: 900px) {
   .hero__inner { grid-template-columns: 1fr; align-items: start; min-height: 0; }
   .hero__shot { aspect-ratio: 16 / 10; min-height: 0; }
+  .hero__title { margin-left: 0; }
   .hero__road::before { top: 52%; }
   .signup__inner { grid-template-columns: 1fr; }
   .foot__inner { grid-template-columns: 1fr; }
@@ -412,5 +432,5 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; }
-  .stop__body { opacity: 1; transform: none; }
+  .stop__body { opacity: 1; transform: none; animation: none; }
 }

@@ -33,7 +33,7 @@
     // so snapping to whole tiles keeps the driven edge on a finished shape.
     var tile = road.querySelector('.road__track').getBoundingClientRect().width * 0.75;
     var travelledPx = pct * box.height;
-    fill.style.height = (tile > 0 ? Math.round(travelledPx / tile) * tile : travelledPx) + 'px';
+    fill.style.height = (tile > 0 ? Math.floor(travelledPx / tile) * tile : travelledPx) + 'px';
 
     for (var i = 0; i < stops.length; i++) {
       var marker = stops[i].querySelector('.stop__marker');
@@ -54,7 +54,7 @@
   paint();
 
   /* ---- sections arrive rather than pop ---- */
-  var revealables = document.querySelectorAll('[data-stop], .facts__item, .review');
+  var revealables = document.querySelectorAll('[data-stop]');
   if (reduced || !('IntersectionObserver' in window)) {
     Array.prototype.forEach.call(revealables, function (el) { el.setAttribute('data-seen', ''); });
   } else {
