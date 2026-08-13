@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Автошкола «Вымпел» — права без лишнего стресса</title>
+<meta name="description" content="Автошкола «Вымпел»: категория B, механика и автомат, занятия с 7:00 до 20:00 в будни и выходные. Обучение с нуля и восстановление навыков.">
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!--
+THESIS: Обучение показано как маршрут, по которому ученик едет от заявки до прав; страница
+  отказывается от плиточной решётки «преимуществ с иконками», которой заканчивается
+  каждый лендинг автошколы.
+OWN-WORLD: Кремовая бумага #F2EDE4 и чернила #17181B, оранжевый #E4531B только как заливка
+  дороги и действия, песок #D8C7A6 для тёмного режима. Oswald узкий капс — дисплей,
+  Golos Text — текст. Единственный графический элемент — шеврон, работающий как дорожная
+  разметка, а не как декор.
+STORY: Ученик видит весь путь целиком, понимает, что на каждой точке рядом человек, и
+  оставляет заявку, потому что первый шаг оказывается маленьким.
+FIRST VIEWPORT: Кремовое поле; оранжевая шеврон-дорога входит снизу и уходит за
+  заголовок; слева крупный капс «ПРАВА БЕЗ ЛИШНЕГО СТРЕССА» в три строки, под ним
+  подзаголовок с графиком и две кнопки, первичная оранжевая; справа кадр автопарка;
+  внизу маркер старта маршрута.
+FORM: Маршрут, позиция 2 в моём ранжированном списке структур, seed 6f135856.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+-->
+
+<a class="skip" href="#route">К маршруту обучения</a>
+
+<header class="nav" data-nav>
+  <a class="logo" href="#top" aria-label="Автошкола Вымпел, на главную">
+    <span class="logo__sup">Автошкола</span>
+    <span class="logo__name">Вымпел</span>
+    <svg class="logo__mark" viewBox="0 0 46 18" aria-hidden="true" focusable="false">
+      <path d="M0 0 L11 9 L0 18 L6 18 L17 9 L6 0 Z"/>
+      <path d="M14 0 L25 9 L14 18 L20 18 L31 9 L20 0 Z"/>
+      <path d="M28 0 L39 9 L28 18 L34 18 L45 9 L34 0 Z"/>
+    </svg>
+  </a>
+  <nav class="nav__links" aria-label="Основная навигация">
+    <a href="#route">Маршрут</a>
+    <a href="#facts">О школе</a>
+    <a href="#reviews">Отзывы</a>
+    <a href="#signup">Контакты</a>
+  </nav>
+  <a class="btn btn--primary btn--sm" href="#signup">Записаться</a>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero__road" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <div class="hero__text">
+        <h1 class="hero__title">Права<br>без лишнего<br>стресса</h1>
+        <p class="hero__lead">
+          Категория B, механика и автомат. Занятия с 7:00 до 20:00, в будни и выходные.
+          Подстроим под твою учёбу или работу.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#signup">Записаться</a>
+          <a class="btn btn--ghost" href="#route">Как проходит обучение</a>
+        </div>
+      </div>
+      <figure class="hero__shot slot" data-slot="Фото автопарка">
+        <div class="slot__body">
+          <span class="slot__tag">Заглушка</span>
+          <p class="slot__note">Кадр автопарка из съёмки заказчика</p>
+        </div>
+      </figure>
+    </div>
+    <p class="hero__start"><span>Старт маршрута</span></p>
+  </section>
+
+  <section class="route" id="route" aria-labelledby="route-h">
+    <div class="route__head">
+      <h2 id="route-h">Весь путь до прав — на одном экране</h2>
+      <p>Шесть точек. Ни одну не надо проходить в одиночку.</p>
+    </div>
+
+    <div class="road" data-road>
+      <div class="road__track" aria-hidden="true"><span class="road__fill" data-road-fill></span></div>
+
+      <ol class="stops">
+
+        <li class="stop" data-stop>
+          <div class="stop__marker" aria-hidden="true"><span>01</span></div>
+          <div class="stop__body">
+            <h3>Заявка</h3>
+            <p class="stop__lead">Первый шаг маленький специально: имя и телефон, больше ничего.</p>
+            <p>Перезвоним в течение рабочего дня, расспросим про твой график и объясним,
+              что вообще будет происходить дальше. Никаких документов на этом этапе.</p>
+          </div>
+        </li>
+
+        <li class="stop stop--split" data-stop>
+          <div class="stop__marker" aria-hidden="true"><span>02</span></div>
+          <div class="stop__body">
+            <h3>Знакомство с инструктором</h3>
+            <p class="stop__lead">Расскажем, объясним, покажем. Вопросы можно задавать любые.</p>
+            <p>На тебя не будут кричать и не будут вздыхать на десятый одинаковый вопрос.
+              Если с инструктором не совпали характерами — меняем, это нормально и
+              обсуждается спокойно.</p>
+            <figure class="stop__shot slot" data-slot="Фото инструктора">
+              <div class="slot__body">
+                <span class="slot__tag">Заглушка</span>
+                <p class="slot__note">Портрет инструктора из съёмки заказчика</p>
+              </div>
+            </figure>
+          </div>
+        </li>
+
+        <li class="stop stop--split" data-stop>
+          <div class="stop__marker" aria-hidden="true"><span>03</span></div>
+          <div class="stop__body">
+            <h3>Теория</h3>
+            <p class="stop__lead">Занятия с 7:00 до 20:00, будни и выходные.</p>
+            <p>Расписание собирается вокруг твоего, а не наоборот. Утро до пар, вечер после
+              смены, суббота целиком — рабочие варианты, а не исключения.</p>
+            <div class="daybar" role="img" aria-label="Занятия доступны с 7:00 до 20:00 каждый день недели">
+              <div class="daybar__scale"><span>7:00</span><span>12:00</span><span>16:00</span><span>20:00</span></div>
+              <div class="daybar__rows">
+                <div class="daybar__row"><span class="daybar__day">Пн</span><span class="daybar__bar"></span></div>
+                <div class="daybar__row"><span class="daybar__day">Вт</span><span class="daybar__bar"></span></div>
+                <div class="daybar__row"><span class="daybar__day">Ср</span><span class="daybar__bar"></span></div>
+                <div class="daybar__row"><span class="daybar__day">Чт</span><span class="daybar__bar"></span></div>
+                <div class="daybar__row"><span class="daybar__day">Пт</span><span class="daybar__bar"></span></div>
+                <div class="daybar__row"><span class="daybar__day">Сб</span><span class="daybar__bar"></span></div>
+                <div class="daybar__row"><span class="daybar__day">Вс</span><span class="daybar__bar"></span></div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="stop" data-stop>
+          <div class="stop__marker" aria-hidden="true"><span>04</span></div>
+          <div class="stop__body">
+            <h3>Практика</h3>
+            <p class="stop__lead">Новые автомобили. Механика и автомат на выбор.</p>
+            <p>Сначала площадка, потом город и реальные экзаменационные маршруты. К моменту
+              экзамена ты уже ездил там, где будешь сдавать.</p>
+            <ul class="inline-facts">
+              <li>Механика и автомат</li>
+              <li>С нуля и восстановление навыков</li>
+              <li>Городские маршруты ГИБДД</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="stop stop--split" data-stop>
+          <div class="stop__marker" aria-hidden="true"><span>05</span></div>
+          <div class="stop__body">
+            <h3>Подготовка к экзамену</h3>
+            <p class="stop__lead">Пробные экзамены и разбор того, что не получается.</p>
+            <p>Задача — не «провести часы», а довести до состояния, когда ты садишься за руль
+              на экзамене без паники, потому что всё это уже было.</p>
+            <p class="claim">
+              <strong>100% учеников, прошедших занятия, сдают экзамен.</strong>
+              <span class="claim__note" data-placeholder>Формулировка заказчика. До публикации нужны подтверждающие документы: период, источник и методика подсчёта.</span>
+            </p>
+          </div>
+        </li>
+
+        <li class="stop stop--finish" data-stop>
+          <div class="stop__marker" aria-hidden="true"><span>06</span></div>
+          <div class="stop__body">
+            <h3>Экзамен и права</h3>
+            <p class="stop__lead">Финиш маршрута — и начало твоего собственного.</p>
+            <p>Дальше уже без нас: твой путь, твои права, твоя свобода.</p>
+          </div>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+  <section class="facts" id="facts" aria-labelledby="facts-h">
+    <h2 id="facts-h" class="facts__h">Что за нами стоит</h2>
+    <dl class="facts__list">
+      <div class="facts__item">
+        <dt>Больше 15 лет</dt>
+        <dd>учим водителей категории B</dd>
+      </div>
+      <div class="facts__item">
+        <dt>С нуля и заново</dt>
+        <dd>для тех, кто никогда не садился за руль, и для тех, кто давно не ездил</dd>
+      </div>
+      <div class="facts__item">
+        <dt>7:00–20:00</dt>
+        <dd>занятия каждый день, включая выходные</dd>
+      </div>
+      <div class="facts__item">
+        <dt>Механика и автомат</dt>
+        <dd>выбираешь сам, поменять решение можно в процессе</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="reviews" id="reviews" aria-labelledby="reviews-h">
+    <div class="reviews__head">
+      <h2 id="reviews-h">Что говорят ученики</h2>
+      <p class="reviews__warn" data-placeholder>
+        Раздел собран как заглушка. Реальных отзывов заказчик пока не передал,
+        а выдуманные сюда не ставим.
+      </p>
+    </div>
+    <ul class="reviews__list">
+      <li class="review slot" data-slot="Отзыв 1">
+        <div class="slot__body">
+          <span class="slot__tag">Заглушка</span>
+          <p class="slot__note">Отзыв ученика: имя, фото, две-три фразы своими словами</p>
+        </div>
+      </li>
+      <li class="review slot" data-slot="Отзыв 2">
+        <div class="slot__body">
+          <span class="slot__tag">Заглушка</span>
+          <p class="slot__note">Отзыв ученика: имя, фото, две-три фразы своими словами</p>
+        </div>
+      </li>
+      <li class="review slot" data-slot="Отзыв 3">
+        <div class="slot__body">
+          <span class="slot__tag">Заглушка</span>
+          <p class="slot__note">Отзыв ученика: имя, фото, две-три фразы своими словами</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="signup" id="signup" aria-labelledby="signup-h">
+    <div class="signup__inner">
+      <div class="signup__pitch">
+        <h2 id="signup-h">Начнём с маленького шага</h2>
+        <p>Оставь имя и телефон. Перезвоним, разберёмся с графиком и подберём формат.
+          Без давления и без «вы обязаны решить сегодня».</p>
+        <ul class="signup__contacts">
+          <li>
+            <span class="signup__label">Телефон</span>
+            <a href="tel:+70001234567" data-placeholder>+7 (000) 123-45-67</a>
+          </li>
+          <li>
+            <span class="signup__label">Адрес</span>
+            <span data-placeholder>ул. Свободы, 123, офис 305</span>
+          </li>
+          <li>
+            <span class="signup__label">Часы работы</span>
+            <span>Ежедневно, 7:00–20:00</span>
+          </li>
+        </ul>
+        <p class="signup__stage" data-placeholder>
+          Телефон и адрес — плейсхолдеры стейджа. Перед продакшеном заменить на реальные.
+        </p>
+      </div>
+
+      <form class="form" data-form novalidate>
+        <div class="field">
+          <label for="name">Как тебя зовут</label>
+          <input id="name" name="name" type="text" autocomplete="given-name" placeholder="Имя" required>
+          <p class="field__error" data-error-for="name" hidden></p>
+        </div>
+        <div class="field">
+          <label for="phone">Телефон</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+7 (___) ___-__-__" required>
+          <p class="field__error" data-error-for="phone" hidden></p>
+        </div>
+        <button class="btn btn--primary btn--block" type="submit" data-submit>Записаться на обучение</button>
+        <p class="form__legal">
+          Нажимая кнопку, ты соглашаешься с политикой конфиденциальности и обработкой
+          персональных данных.
+        </p>
+        <p class="form__done" data-done hidden role="status">
+          Заявка отправлена. Перезвоним в течение рабочего дня.
+        </p>
+        <p class="form__stage" data-placeholder>Форма на стейдже ничего не отправляет: обработчик подключается на продакшене.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot__inner">
+    <div class="foot__brand">
+      <span class="logo__sup">Автошкола</span>
+      <span class="logo__name">Вымпел</span>
+      <p class="foot__tag">Твой путь.<br>Твои права.<br>Твоя свобода.</p>
+    </div>
+    <nav class="foot__nav" aria-label="Навигация в подвале">
+      <div>
+        <h3>Обучение</h3>
+        <ul>
+          <li><a href="#route">Как проходит</a></li>
+          <li><a href="#route">Категория B</a></li>
+          <li><a href="#route">Механика и автомат</a></li>
+          <li><a href="#route">Восстановление навыков</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Школа</h3>
+        <ul>
+          <li><a href="#facts">О нас</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+          <li><a href="#signup">Контакты</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <p class="foot__legal">
+    © Автошкола «Вымпел», 2026. Информация на сайте не является публичной офертой.
+  </p>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>
