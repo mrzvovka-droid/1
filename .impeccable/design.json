@@ -1,0 +1,489 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-14T00:00:00Z",
+  "title": "Design System: Автошкола «Вымпел»",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Cream Paper",
+        "canonical": "#f2ede4",
+        "tonalRamp": [
+          "oklch(15% 0.015 85)",
+          "oklch(26% 0.015 85)",
+          "oklch(37% 0.015 85)",
+          "oklch(49% 0.015 85)",
+          "oklch(60% 0.015 85)",
+          "oklch(72% 0.015 85)",
+          "oklch(83% 0.015 85)",
+          "oklch(95% 0.015 85)"
+        ]
+      },
+      "paper-2": {
+        "role": "neutral",
+        "displayName": "Deep Cream",
+        "canonical": "#e9e2d6",
+        "tonalRamp": [
+          "oklch(15% 0.021 85)",
+          "oklch(26% 0.021 85)",
+          "oklch(37% 0.021 85)",
+          "oklch(49% 0.021 85)",
+          "oklch(60% 0.021 85)",
+          "oklch(72% 0.021 85)",
+          "oklch(83% 0.021 85)",
+          "oklch(95% 0.021 85)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#17181b",
+        "tonalRamp": [
+          "oklch(15% 0.006 265)",
+          "oklch(26% 0.006 265)",
+          "oklch(37% 0.006 265)",
+          "oklch(49% 0.006 265)",
+          "oklch(60% 0.006 265)",
+          "oklch(72% 0.006 265)",
+          "oklch(83% 0.006 265)",
+          "oklch(95% 0.006 265)"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "#55575e",
+        "tonalRamp": [
+          "oklch(15% 0.012 275)",
+          "oklch(26% 0.012 275)",
+          "oklch(37% 0.012 275)",
+          "oklch(49% 0.012 275)",
+          "oklch(60% 0.012 275)",
+          "oklch(72% 0.012 275)",
+          "oklch(83% 0.012 275)",
+          "oklch(95% 0.012 275)"
+        ]
+      },
+      "orange": {
+        "role": "primary",
+        "displayName": "Signal Orange",
+        "canonical": "#e4531b",
+        "tonalRamp": [
+          "oklch(15% 0.19 40)",
+          "oklch(26% 0.19 40)",
+          "oklch(37% 0.19 40)",
+          "oklch(49% 0.19 40)",
+          "oklch(60% 0.19 40)",
+          "oklch(72% 0.19 40)",
+          "oklch(83% 0.19 40)",
+          "oklch(95% 0.19 40)"
+        ]
+      },
+      "orange-deep": {
+        "role": "primary",
+        "displayName": "Deep Orange",
+        "canonical": "#c8440f",
+        "tonalRamp": [
+          "oklch(15% 0.18 39)",
+          "oklch(26% 0.18 39)",
+          "oklch(37% 0.18 39)",
+          "oklch(49% 0.18 39)",
+          "oklch(60% 0.18 39)",
+          "oklch(72% 0.18 39)",
+          "oklch(83% 0.18 39)",
+          "oklch(95% 0.18 39)"
+        ]
+      },
+      "sand": {
+        "role": "secondary",
+        "displayName": "Sand",
+        "canonical": "#d8c7a6",
+        "tonalRamp": [
+          "oklch(15% 0.05 85)",
+          "oklch(26% 0.05 85)",
+          "oklch(37% 0.05 85)",
+          "oklch(49% 0.05 85)",
+          "oklch(60% 0.05 85)",
+          "oklch(72% 0.05 85)",
+          "oklch(83% 0.05 85)",
+          "oklch(95% 0.05 85)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#d5cdbf",
+        "tonalRamp": [
+          "oklch(15% 0.017 85)",
+          "oklch(26% 0.017 85)",
+          "oklch(37% 0.017 85)",
+          "oklch(49% 0.017 85)",
+          "oklch(60% 0.017 85)",
+          "oklch(72% 0.017 85)",
+          "oklch(83% 0.017 85)",
+          "oklch(95% 0.017 85)"
+        ]
+      },
+      "error-edge": {
+        "role": "tertiary",
+        "displayName": "Error Edge",
+        "canonical": "#ff8a5c",
+        "tonalRamp": [
+          "oklch(15% 0.14 42)",
+          "oklch(26% 0.14 42)",
+          "oklch(37% 0.14 42)",
+          "oklch(49% 0.14 42)",
+          "oklch(60% 0.14 42)",
+          "oklch(72% 0.14 42)",
+          "oklch(83% 0.14 42)",
+          "oklch(95% 0.14 42)"
+        ]
+      },
+      "error-text": {
+        "role": "tertiary",
+        "displayName": "Error Text",
+        "canonical": "#ff9d75",
+        "tonalRamp": [
+          "oklch(15% 0.12 44)",
+          "oklch(26% 0.12 44)",
+          "oklch(37% 0.12 44)",
+          "oklch(49% 0.12 44)",
+          "oklch(60% 0.12 44)",
+          "oklch(72% 0.12 44)",
+          "oklch(83% 0.12 44)",
+          "oklch(95% 0.12 44)"
+        ]
+      },
+      "flag-rust": {
+        "role": "tertiary",
+        "displayName": "Placeholder Flag (on deep cream)",
+        "canonical": "#a83a0b",
+        "note": "Hard-coded at the point of use; not declared as a custom property in :root.",
+        "tonalRamp": [
+          "oklch(15% 0.16 41)",
+          "oklch(26% 0.16 41)",
+          "oklch(37% 0.16 41)",
+          "oklch(49% 0.16 41)",
+          "oklch(60% 0.16 41)",
+          "oklch(72% 0.16 41)",
+          "oklch(83% 0.16 41)",
+          "oklch(95% 0.16 41)"
+        ]
+      },
+      "flag-rust-deep": {
+        "role": "tertiary",
+        "displayName": "Placeholder Flag (on sand)",
+        "canonical": "#8f3208",
+        "note": "Hard-coded at the point of use; not declared as a custom property in :root.",
+        "tonalRamp": [
+          "oklch(15% 0.15 41)",
+          "oklch(26% 0.15 41)",
+          "oklch(37% 0.15 41)",
+          "oklch(49% 0.15 41)",
+          "oklch(60% 0.15 41)",
+          "oklch(72% 0.15 41)",
+          "oklch(83% 0.15 41)",
+          "oklch(95% 0.15 41)"
+        ]
+      },
+      "flag-note-ink": {
+        "role": "tertiary",
+        "displayName": "Placeholder Note Ink (on sand)",
+        "canonical": "#4a4436",
+        "note": "Hard-coded at the point of use; not declared as a custom property in :root.",
+        "tonalRamp": [
+          "oklch(15% 0.02 90)",
+          "oklch(26% 0.02 90)",
+          "oklch(37% 0.02 90)",
+          "oklch(49% 0.02 90)",
+          "oklch(60% 0.02 90)",
+          "oklch(72% 0.02 90)",
+          "oklch(83% 0.02 90)",
+          "oklch(95% 0.02 90)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The hero headline only, set in three hard-broken uppercase lines and pulled left over the road."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "The two load-bearing section titles: the route's opening and the signup's invitation. Uppercase."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Stop headings and the quieter section titles. Uppercase. The final stop breaks upward to clamp(1.875rem, 5vw, 3.5rem) in deep orange."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "The one-sentence promise under each stop heading. The hero's lead is the same size at 400 weight in soft ink."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All running prose, max 68ch; narrower measures where the column demands (46ch hero lead, 52ch placeholder notes, 30ch inside a slot)."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Field labels, contact labels, legal text, the route-start caption, staging notes."
+      },
+      "action": {
+        "displayName": "Action",
+        "purpose": "Button text, uppercase. The small nav variant drops to 0.875rem."
+      },
+      "micro-caps": {
+        "displayName": "Micro-caps",
+        "purpose": "The single tracked-caps instance in the system: the word above the wordmark in the logo lockup. Not a reusable tier."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease-house",
+        "value": "cubic-bezier(.16, .84, .3, 1)",
+        "purpose": "The only easing in the build. Every transition and the one entrance animation use it."
+      },
+      {
+        "name": "state-fast",
+        "value": "0.2s",
+        "purpose": "Nav link colour on hover."
+      },
+      {
+        "name": "state-input",
+        "value": "0.24s",
+        "purpose": "Input border colour on hover and focus."
+      },
+      {
+        "name": "state-button",
+        "value": "0.28s",
+        "purpose": "Button background, colour and 2px transform lift."
+      },
+      {
+        "name": "state-nav",
+        "value": "0.3s",
+        "purpose": "The nav's hairline and ground appearing once the page has scrolled 8px."
+      },
+      {
+        "name": "state-marker",
+        "value": "0.4s",
+        "purpose": "A stop marker flipping to ink-on-orange as it crosses the eye line."
+      },
+      {
+        "name": "entrance-pull-in",
+        "value": "0.68s cubic-bezier(.16, .84, .3, 1) both",
+        "purpose": "The one authored entrance: opacity 0 and translateX(-22px) to rest. Content arrives from the road's side, on the road's axis. Gated behind prefers-reduced-motion: no-preference."
+      },
+      {
+        "name": "reduced-motion-floor",
+        "value": "0.001ms",
+        "purpose": "Under prefers-reduced-motion: reduce every animation and transition duration collapses to this and smooth scrolling is turned off."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "compact",
+        "value": "640px",
+        "note": "max-width. Rail narrows to 28px, nav wraps to two rows with a ruled link row, route offset tightens to rail + 1rem, hero buttons go full-width."
+      },
+      {
+        "name": "stack",
+        "value": "900px",
+        "note": "max-width. Hero collapses to one column, the headline's negative pull is removed, the hero road starts at 52%, signup/footer/facts rows stack."
+      },
+      {
+        "name": "split",
+        "value": "901px",
+        "note": "min-width. Alternating stops open a second column for their evidence (cut-out photo, day bar, claim)."
+      }
+    ],
+    "roadGeometry": {
+      "tile": "40x30 SVG chevron, defined twice as a data-URI custom property (sand and orange), identical geometry",
+      "paint": "background-size: 100% auto; background-repeat: repeat-y at the band's own width, so the tile scales with the band: 40px chevrons on the route rail, clamp(96px, 13vw, 190px) in the hero",
+      "tileHeight": "rail rendered width x 0.75 (the tile's 30/40 aspect)",
+      "fillSnap": "Math.floor(travelledPx / tileHeight) * tileHeight — the driven edge always lands on a finished arrow",
+      "progress": "measured against a driver's eye line at 58% of viewport height, clamped 0-1 against the road's bounding box",
+      "railOffset": "calc(rail + clamp(1.25rem, 3vw, 2.5rem)) on the route axis; the hero uses calc(road-w + clamp(1.25rem, 3vw, 2.5rem)) and its headline carries the exact negative, so at hero width the road passes behind whole words of display type",
+      "heroBand": "top 8%, bottom -4%, masked with linear-gradient(to bottom, transparent 0%, #000 26%) so the road arrives from off-screen; below 640px it narrows to clamp(56px, 16vw, 84px) and starts at 62%, clearing the buttons",
+      "heroWidth": "road-w: clamp(96px, 13vw, 190px), against the route's 40px rail. Same x-position, same chevron, different scale — one road seen at two distances",
+      "crossingRule": "only the display headline crosses the road; lead text and buttons clear it, since soft ink on orange measures 1.9:1"
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The action colour. Ink on orange, inverting to orange on ink with a 2px lift on hover.",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\">Записаться</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; padding: 1rem 1.75rem; border: 1px solid transparent; border-radius: 3px; font-family: Oswald, sans-serif; font-weight: 500; font-size: 1rem; letter-spacing: .02em; text-transform: uppercase; text-decoration: none; cursor: pointer; transition: background-color .28s cubic-bezier(.16,.84,.3,1), transform .28s cubic-bezier(.16,.84,.3,1), color .28s cubic-bezier(.16,.84,.3,1); } .ds-btn-primary { background: var(--orange, #e4531b); color: var(--ink, #17181b); } .ds-btn-primary:hover { background: var(--ink, #17181b); color: var(--orange, #e4531b); transform: translateY(-2px); } .ds-btn-primary:focus-visible { outline: 2px solid var(--orange, #e4531b); outline-offset: 3px; border-radius: 2px; } .ds-btn-primary:disabled { opacity: .5; cursor: not-allowed; transform: none; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "The secondary action: a 1px ink outline that fills to ink on hover.",
+      "html": "<a class=\"ds-btn ds-btn-ghost\" href=\"#\">Как проходит обучение</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; padding: 1rem 1.75rem; border: 1px solid transparent; border-radius: 3px; font-family: Oswald, sans-serif; font-weight: 500; font-size: 1rem; letter-spacing: .02em; text-transform: uppercase; text-decoration: none; cursor: pointer; transition: background-color .28s cubic-bezier(.16,.84,.3,1), transform .28s cubic-bezier(.16,.84,.3,1), color .28s cubic-bezier(.16,.84,.3,1); } .ds-btn-ghost { background: transparent; color: var(--ink, #17181b); border-color: var(--ink, #17181b); } .ds-btn-ghost:hover { background: var(--ink, #17181b); color: var(--paper, #f2ede4); transform: translateY(-2px); } .ds-btn-ghost:focus-visible { outline: 2px solid var(--orange, #e4531b); outline-offset: 3px; border-radius: 2px; }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Lives only on the ink surface. Sand-tinted border warms on hover, goes solid orange on focus; the caret is orange.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-phone\">Телефон</label><input id=\"ds-phone\" type=\"tel\" placeholder=\"+7 (___) ___-__-__\"><p class=\"ds-field-error\">Не хватает цифр: нужен номер из 10 или 11 цифр.</p></div>",
+      "css": ".ds-field { background: var(--ink, #17181b); padding: 1rem; border-radius: 5px; } .ds-field label { display: block; margin-bottom: .4375rem; font-family: 'Golos Text', system-ui, sans-serif; font-size: .8125rem; color: var(--sand, #d8c7a6); } .ds-field input { width: 100%; padding: .9375rem 1rem; background: var(--ink, #17181b); color: var(--paper, #f2ede4); caret-color: var(--orange, #e4531b); border: 1px solid color-mix(in srgb, var(--sand, #d8c7a6) 34%, transparent); border-radius: 3px; font-family: 'Golos Text', system-ui, sans-serif; font-size: 1rem; transition: border-color .24s cubic-bezier(.16,.84,.3,1); } .ds-field input::placeholder { color: color-mix(in srgb, var(--sand, #d8c7a6) 62%, var(--ink, #17181b)); } .ds-field input:hover { border-color: color-mix(in srgb, var(--sand, #d8c7a6) 55%, transparent); } .ds-field input:focus { border-color: var(--orange, #e4531b); } .ds-field input:focus-visible { outline: 2px solid var(--orange, #e4531b); outline-offset: 3px; } .ds-field input[aria-invalid=\"true\"] { border-color: #ff8a5c; } .ds-field-error { margin: .4375rem 0 0; font-family: 'Golos Text', system-ui, sans-serif; font-size: .8125rem; color: #ff9d75; }"
+    },
+    {
+      "name": "Navigation Bar",
+      "kind": "nav",
+      "refersTo": "nav",
+      "description": "Sticky, 88%-opaque paper with a 10px backdrop blur. The bottom hairline is a scroll state, not a fixture.",
+      "html": "<header class=\"ds-nav ds-nav--stuck\"><a class=\"ds-logo\" href=\"#\"><span class=\"ds-logo-sup\">Автошкола</span><span class=\"ds-logo-name\">Вымпел</span><svg class=\"ds-logo-mark\" viewBox=\"0 0 46 18\" aria-hidden=\"true\"><path d=\"M0 0 L11 9 L0 18 L6 18 L17 9 L6 0 Z\"/><path d=\"M14 0 L25 9 L14 18 L20 18 L31 9 L20 0 Z\"/><path d=\"M28 0 L39 9 L28 18 L34 18 L45 9 L34 0 Z\"/></svg></a><nav class=\"ds-nav-links\"><a href=\"#\">Маршрут</a><a href=\"#\">О школе</a><a href=\"#\">Отзывы</a></nav></header>",
+      "css": ".ds-nav { display: flex; align-items: center; gap: 3rem; padding: 1.125rem 1.5rem; background: color-mix(in srgb, var(--paper, #f2ede4) 88%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid transparent; transition: border-color .3s cubic-bezier(.16,.84,.3,1), background-color .3s cubic-bezier(.16,.84,.3,1); } .ds-nav--stuck { border-bottom-color: var(--line, #d5cdbf); } .ds-logo { display: grid; grid-template-columns: auto auto; align-items: center; column-gap: .625rem; text-decoration: none; } .ds-logo-sup { grid-column: 1; font-family: Oswald, sans-serif; font-size: .5625rem; letter-spacing: .34em; text-transform: uppercase; color: var(--ink-soft, #55575e); } .ds-logo-name { grid-column: 1; font-family: Oswald, sans-serif; font-weight: 700; font-size: 1.5rem; letter-spacing: -0.01em; text-transform: uppercase; line-height: .9; color: var(--ink, #17181b); } .ds-logo-mark { grid-column: 2; grid-row: 1 / span 2; width: 38px; height: 15px; fill: var(--orange, #e4531b); } .ds-nav-links { display: flex; gap: 1.75rem; margin-left: auto; } .ds-nav-links a { font-family: Oswald, sans-serif; font-size: .9375rem; letter-spacing: .02em; text-transform: uppercase; text-decoration: none; color: var(--ink-soft, #55575e); transition: color .2s cubic-bezier(.16,.84,.3,1); } .ds-nav-links a:hover { color: var(--ink, #17181b); } .ds-nav-links a:focus-visible { outline: 2px solid var(--orange, #e4531b); outline-offset: 3px; border-radius: 2px; }"
+    },
+    {
+      "name": "Road Rail with Stop Marker",
+      "kind": "custom",
+      "refersTo": "stop-marker",
+      "description": "The system's defining object: a sand chevron track, an orange fill snapped to whole tiles, and a square marker that flips to ink-on-orange when the reader reaches it.",
+      "html": "<div class=\"ds-road\"><div class=\"ds-road-track\"><span class=\"ds-road-fill\"></span></div><div class=\"ds-stop\"><div class=\"ds-stop-marker ds-stop-marker--reached\"><span>03</span></div><div class=\"ds-stop-body\"><h3>Теория</h3><p class=\"ds-stop-lead\">Занятия с 7:00 до 20:00, будни и выходные.</p></div></div></div>",
+      "css": ".ds-road { position: relative; padding-left: calc(40px + 2.5rem); min-height: 180px; } .ds-road-track { position: absolute; left: 0; top: 0; bottom: 0; width: 40px; background-image: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='30' viewBox='0 0 40 30'%3E%3Cpath d='M0 0 L20 12 L40 0 L40 10 L20 22 L0 10 Z' fill='%23d8c7a6'/%3E%3C/svg%3E\"); background-size: 100% auto; background-repeat: repeat-y; } .ds-road-fill { position: absolute; inset: 0 0 auto 0; height: 90px; background-image: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='30' viewBox='0 0 40 30'%3E%3Cpath d='M0 0 L20 12 L40 0 L40 10 L20 22 L0 10 Z' fill='%23e4531b'/%3E%3C/svg%3E\"); background-size: 100% auto; background-repeat: repeat-y; overflow: hidden; } .ds-stop { position: relative; } .ds-stop-marker { position: absolute; left: calc(-1 * (40px + 2.5rem)); top: -.25rem; width: 40px; height: 40px; display: grid; place-items: center; background: var(--ink, #17181b); color: var(--paper, #f2ede4); border-radius: 3px; font-family: Oswald, sans-serif; font-weight: 700; font-size: .9375rem; transition: background-color .4s cubic-bezier(.16,.84,.3,1), color .4s cubic-bezier(.16,.84,.3,1); } .ds-stop-marker--reached { background: var(--orange, #e4531b); color: var(--ink, #17181b); } .ds-stop-body h3 { margin: 0 0 .875rem; font-family: Oswald, sans-serif; font-weight: 700; font-size: 2.25rem; line-height: .96; letter-spacing: -0.02em; text-transform: uppercase; color: var(--ink, #17181b); } .ds-stop-lead { margin: 0; font-family: 'Golos Text', system-ui, sans-serif; font-weight: 500; font-size: 1.25rem; line-height: 1.6; color: var(--ink, #17181b); }"
+    },
+    {
+      "name": "Marked Placeholder Slot",
+      "kind": "card",
+      "refersTo": "slot-placeholder",
+      "description": "Content the client has not supplied, shown as a visibly flagged slot that names the missing asset and its destination path. Swaps itself for the real image the moment the file loads.",
+      "html": "<figure class=\"ds-slot\"><div class=\"ds-slot-body\"><span class=\"ds-slot-tag\">Заглушка</span><p class=\"ds-slot-note\">Отзыв ученика: имя, фото, две-три фразы своими словами</p></div></figure>",
+      "css": ".ds-slot { position: relative; margin: 0; min-height: 12rem; background: var(--paper-2, #e9e2d6); border: 1px dashed var(--sand, #d8c7a6); border-radius: 4px; display: grid; place-items: center; padding: 1.5rem; text-align: center; } .ds-slot-tag { display: inline-block; margin-bottom: .5rem; font-family: 'Golos Text', system-ui, sans-serif; font-size: .75rem; font-weight: 600; color: #a83a0b; } .ds-slot-note { margin: 0; max-width: 30ch; font-family: 'Golos Text', system-ui, sans-serif; font-size: .875rem; line-height: 1.6; color: var(--ink-soft, #55575e); }"
+    },
+    {
+      "name": "Cut-out Field",
+      "kind": "custom",
+      "refersTo": "cutout-field",
+      "description": "How people enter the page: cut out of their background and stood on a sand field with a 2px orange baseline. In the hero the field is removed entirely so the figure stands on the paper.",
+      "html": "<figure class=\"ds-cutout\"><div class=\"ds-slot-body\"><span class=\"ds-cutout-tag\">Заглушка</span><p class=\"ds-cutout-note\">Обтравленный кадр: инструктор у учебного автомобиля.</p></div></figure>",
+      "css": ".ds-cutout { position: relative; margin: 0; max-width: 21rem; aspect-ratio: 4 / 5; background: var(--sand, #d8c7a6); border: 0; border-radius: 4px; padding: 0; overflow: hidden; display: grid; align-items: center; justify-items: center; text-align: center; } .ds-cutout::after { content: \"\"; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; background: var(--orange, #e4531b); } .ds-cutout img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: bottom; } .ds-cutout .ds-slot-body { padding: 1.5rem; } .ds-cutout-tag { display: inline-block; margin-bottom: .5rem; font-family: 'Golos Text', system-ui, sans-serif; font-size: .75rem; font-weight: 600; color: #8f3208; } .ds-cutout-note { margin: 0; max-width: 30ch; font-family: 'Golos Text', system-ui, sans-serif; font-size: .875rem; line-height: 1.6; color: #4a4436; }"
+    },
+    {
+      "name": "Inline Fact Chip",
+      "kind": "chip",
+      "refersTo": "chip-fact",
+      "description": "The system's only chip: a hairline-bordered outline tag, no fill, no state. Used to list facts inline under a stop.",
+      "html": "<ul class=\"ds-chips\"><li>Механика и автомат</li><li>С нуля и восстановление навыков</li><li>Городские маршруты ГИБДД</li></ul>",
+      "css": ".ds-chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem; } .ds-chips li { border: 1px solid var(--line, #d5cdbf); border-radius: 3px; padding: .5rem .875rem; font-family: 'Golos Text', system-ui, sans-serif; font-size: .875rem; color: var(--ink, #17181b); }"
+    },
+    {
+      "name": "Day Bar",
+      "kind": "custom",
+      "refersTo": "daybar",
+      "description": "Seven labelled rows of sand bars under a four-stop time scale, exposed as a single role=\"img\" with a text alternative. Weekend rows carry the only mixed orange in the system.",
+      "html": "<div class=\"ds-daybar\" role=\"img\" aria-label=\"Занятия доступны с 7:00 до 20:00 каждый день недели\"><div class=\"ds-daybar-scale\"><span>7:00</span><span>12:00</span><span>16:00</span><span>20:00</span></div><div class=\"ds-daybar-rows\"><div class=\"ds-daybar-row\"><span class=\"ds-daybar-day\">Пн</span><span class=\"ds-daybar-bar\"></span></div><div class=\"ds-daybar-row\"><span class=\"ds-daybar-day\">Вт</span><span class=\"ds-daybar-bar\"></span></div><div class=\"ds-daybar-row\"><span class=\"ds-daybar-day\">Ср</span><span class=\"ds-daybar-bar\"></span></div><div class=\"ds-daybar-row\"><span class=\"ds-daybar-day\">Чт</span><span class=\"ds-daybar-bar\"></span></div><div class=\"ds-daybar-row\"><span class=\"ds-daybar-day\">Пт</span><span class=\"ds-daybar-bar\"></span></div><div class=\"ds-daybar-row\"><span class=\"ds-daybar-day\">Сб</span><span class=\"ds-daybar-bar\"></span></div><div class=\"ds-daybar-row\"><span class=\"ds-daybar-day\">Вс</span><span class=\"ds-daybar-bar\"></span></div></div></div>",
+      "css": ".ds-daybar { max-width: 34rem; font-family: 'Golos Text', system-ui, sans-serif; } .ds-daybar-scale { display: flex; justify-content: space-between; font-variant-numeric: tabular-nums; font-size: .75rem; color: var(--ink-soft, #55575e); margin-bottom: .5rem; padding-left: 2.25rem; } .ds-daybar-rows { display: grid; gap: .3125rem; } .ds-daybar-row { display: grid; grid-template-columns: 2.25rem 1fr; align-items: center; } .ds-daybar-day { font-size: .8125rem; color: var(--ink-soft, #55575e); } .ds-daybar-bar { height: .625rem; background: var(--sand, #d8c7a6); border-radius: 2px; } .ds-daybar-row:nth-child(6) .ds-daybar-bar, .ds-daybar-row:nth-child(7) .ds-daybar-bar { background: color-mix(in srgb, var(--orange, #e4531b) 55%, var(--sand, #d8c7a6)); }"
+    },
+    {
+      "name": "Ruled Fact Row",
+      "kind": "card",
+      "refersTo": "facts-item",
+      "description": "The system's answer to a feature grid: a definition list ruled with 1px hairlines, term in condensed caps, description in soft ink. There is no card in this build.",
+      "html": "<dl class=\"ds-facts\"><div class=\"ds-facts-item\"><dt>Больше 15 лет</dt><dd>учим водителей категории B</dd></div><div class=\"ds-facts-item\"><dt>7:00–20:00</dt><dd>занятия каждый день, включая выходные</dd></div></dl>",
+      "css": ".ds-facts { margin: 0; display: grid; gap: 0; } .ds-facts-item { display: grid; grid-template-columns: minmax(0, 20rem) minmax(0, 1fr); gap: 3rem; padding: 2rem 0; border-top: 1px solid var(--line, #d5cdbf); } .ds-facts-item:last-child { border-bottom: 1px solid var(--line, #d5cdbf); } .ds-facts-item dt { font-family: Oswald, sans-serif; font-weight: 500; text-transform: uppercase; font-size: 1.875rem; letter-spacing: -0.01em; font-variant-numeric: tabular-nums; color: var(--ink, #17181b); } .ds-facts-item dd { margin: 0; align-self: center; font-family: 'Golos Text', system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.6; color: var(--ink-soft, #55575e); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Road Itself",
+    "overview": "The page is built as a road, not as a page about a road. One chevron tile — a 40×30 SVG arrow — is the only piece of graphic vocabulary in the system, and it is never used as an ornament. It is drawn as a vertical band at the left edge, in sand where the road is not yet driven and in orange where it is, and it carries the reader from the hero down through six numbered stops to a finish line. Everything else is paper, ink and space. The system has no icon set, no card grid, no illustration layer, and nothing that decorates without also directing.\n\nThe ground is warm and printed rather than digital: cream paper under near-black ink, with a second, slightly deeper paper for shifted sections and a warm sand for the road's undriven state and for the ground people stand on. Density is low and the rhythm is long — sections breathe on a clamp(4.5rem, 9vw, 8.5rem) step and headings run tight, condensed and uppercase against generous body measure. Orange is scarce by construction: it belongs to the road and to the things you can act on, so its appearance anywhere on screen is a claim on the reader's attention rather than a mood.\n\nThe client's binding image constraints are honoured negatively as much as positively: no Soviet-driving-school register, no municipal-institution formality, no road-sign iconography as the page's visual identity, and no over-severe system. The chevron is a road marking, not a traffic sign; the type is condensed and modern rather than official; the tone of the surface is paper and warmth, not enamel and regulation.",
+    "keyCharacteristics": [
+      "One graphic element (the chevron tile) doing structural work, reused at three scales",
+      "Cream paper and near-black ink; orange strictly rationed to road and action",
+      "Condensed uppercase display (Oswald) against a warm humanist body face (Golos Text)",
+      "Completely flat: no shadow anywhere in the stylesheet; depth is tonal and hairline",
+      "One entrance animation, one axis, gated behind reduced-motion",
+      "Unfinished content ships as a visibly marked placeholder, never as invention"
+    ],
+    "rules": [
+      {
+        "name": "The Road-and-Action Rule",
+        "body": "Orange belongs to the road and to what the reader can act on. Anything else that wants to be orange is asking for attention it has not earned; the third permitted use — the hairline on a placeholder note — is orange because an unresolved fact is an outstanding action.",
+        "section": "colors"
+      },
+      {
+        "name": "The Contrast-Pair Rule",
+        "body": "Orange never carries pale text. The primary button is ink on orange and inverts to orange on ink on hover; the reached marker is ink on orange. Cream on orange does not appear anywhere in the build and should not be introduced.",
+        "section": "colors"
+      },
+      {
+        "name": "The Marked Placeholder Rule",
+        "body": "Content the client has not supplied is shown as a visibly marked slot — dashed sand border, a rust «Заглушка» tag, and a note naming exactly what is missing and where to put it. Fabricated reviews, stock photography and invented numbers are not substitutes. Unverified claims (the 100% statistic) ship with their verification note attached in the same orange-hairlined block.",
+        "section": "colors"
+      },
+      {
+        "name": "The Oswald-Is-Uppercase Rule",
+        "body": "Setting something in Oswald is what makes it uppercase; the two decisions are not separable in this system. Display headings, stop titles, buttons, nav links, the facts terms, the claim, the footer tagline and the logo are all Oswald and all caps. The one exception in the build is the footer's column headings, which are Oswald at 500 with uppercase and tracking explicitly removed so they read as labels, not as headings. Body copy is never uppercased.",
+        "section": "typography"
+      },
+      {
+        "name": "The Single Tracked Caps Rule",
+        "body": "The tracked-out micro-caps layer — kickers, eyebrows, section numbers, over-labels — was cut from this build. .logo__sup at .34em is the only surviving instance and it is part of the logo lockup, not a typographic tier. Do not reintroduce tracked caps as a way to label a section.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tightening Rule",
+        "body": "Display type tightens as it grows: -0.028em at hero size, -0.02em at heading size, -0.01em on the wordmark and the facts terms. Nothing in Oswald tracks positive except the two caps that are labels by function (buttons at .02em, footer tagline at .04em) and the logo's supralabel.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Road Rule",
+        "body": "The hero road and the route rail share an x-position and a width and are read as a single continuous road. Any new full-bleed section on the route axis adopts the same calc(rail + gap) left offset, or it does not sit on the road at all.",
+        "section": "layout"
+      },
+      {
+        "name": "The Rail Belongs to the Road Rule",
+        "body": "The left rail-wide column carries the chevrons, the stop markers and the finish square. No text, no image and no button is placed in it.",
+        "section": "layout"
+      },
+      {
+        "name": "The No-Shadow Rule",
+        "body": "This system has no shadow vocabulary and does not want one. If a surface needs to separate, change its ground tone or give it a hairline. Drop shadows, glows and hard offset shadows are all out.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Four Grounds Rule",
+        "body": "Cream paper, deep cream, sand and ink are the complete set of surfaces. A fifth tone is a new decision, not a variation.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Whole-Tile Rule",
+        "body": "The road's orange fill is snapped to whole chevrons: its height is floored to a multiple of the tile height, computed as the rail's rendered width × 0.75 (the tile's 30/40 aspect). The driven edge always lands on a finished arrow, never mid-shape.",
+        "section": "shapes"
+      },
+      {
+        "name": "The Nearly-Sharp Rule",
+        "body": "Radii stay at or under 5px on every rectangle. Pills and fully-rounded shapes belong to the browser's scrollbar, not to this system's components.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do put the chevron to work as structure — a road, a rail, a mark — at the width of the element it belongs to. It scales with background-size: 100% auto, so it fits any rail width.",
+      "Do keep every section on the route axis at the same calc(rail + gap) left offset, so the road stays one road.",
+      "Do pair orange with ink in both directions (ink on orange at rest, orange on ink on hover). Both directions are legible; cream on orange is not.",
+      "Do separate surfaces with a ground change or a 1px line hairline.",
+      "Do ship unresolved content as a marked slot that names what is missing and where it goes, and attach a verification note to any claim not yet documented.",
+      "Do cut people out and stand them on the sand field with its orange baseline — or, in a hero, on the paper itself with no field at all.",
+      "Do gate any motion behind prefers-reduced-motion and give the reduced path a real, complete, static state.",
+      "Do write field errors as second-person instructions that say what to fix."
+    ],
+    "donts": [
+      "Don't add a shadow. There are none in the build and the flatness is the material.",
+      "Don't spend orange on decoration, mood, backgrounds or large fills. Road and action only.",
+      "Don't reintroduce tracked-out caps as kickers, eyebrows or section labels; .logo__sup is the only instance and it belongs to the logo.",
+      "Don't uppercase body copy, or set body copy in Oswald.",
+      "Don't turn the route into an icon-and-tile grid of «преимущества» — the page exists specifically to refuse that layout.",
+      "Don't use road signs, official insignia or municipal-institution styling as the page's visual identity; the chevron is a road marking and that is the extent of the traffic vocabulary.",
+      "Don't frame a photograph in a box. The client's backgrounds are the weak part of the footage; the cut-out is the treatment.",
+      "Don't place anything but the road, its markers and its finish square in the left rail column.",
+      "Don't invent reviews, numbers, names or photographs to fill a slot."
+    ]
+  }
+}
