@@ -225,7 +225,10 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
 .nav__links a:hover { color: var(--ink); }
 
 /* ---------- hero ---------- */
-.hero { position: relative; padding: clamp(3rem, 8vw, 7rem) var(--gutter) 0; overflow: hidden; }
+.hero {
+  --road-w: clamp(96px, 13vw, 190px);
+  position: relative; padding: clamp(3rem, 8vw, 7rem) var(--gutter) 0; overflow: hidden;
+}
 
 .hero__road {
   position: absolute; left: var(--gutter); right: var(--gutter); top: 0; bottom: 0;
@@ -235,8 +238,8 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
 /* The band sits exactly where the route rail begins, so the hero road and the
    route are one road rather than two drawings of one. */
 .hero__road::before {
-  content: ""; position: absolute; left: 0; top: 18%; bottom: -4%;
-  width: var(--rail);
+  content: ""; position: absolute; left: 0; top: 8%; bottom: -4%;
+  width: var(--road-w);
   background-image: var(--chevron-orange);
   background-size: 100% auto; background-repeat: repeat-y;
   -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 26%);
@@ -246,15 +249,15 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
 .hero__inner {
   position: relative; z-index: 1;
   max-width: var(--wrap); margin: 0 auto;
-  padding-left: calc(var(--rail) + clamp(1.25rem, 3vw, 2.5rem));
+  padding-left: calc(var(--road-w) + clamp(1.25rem, 3vw, 2.5rem));
   display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
   gap: clamp(1.5rem, 4vw, 4rem); align-items: end;
-  min-height: min(62vh, 560px);
+  min-height: min(68vh, 620px);
 }
 
 .hero__title {
   position: relative; z-index: 1;
-  margin-left: calc(-1 * (var(--rail) + clamp(1.25rem, 3vw, 2.5rem)));
+  margin-left: calc(-1 * (var(--road-w) + clamp(1.25rem, 3vw, 2.5rem)));
   font-size: clamp(2.75rem, 9.2vw, 6rem);
   line-height: .88; letter-spacing: -0.028em;
   margin-bottom: 1.75rem;
@@ -267,7 +270,7 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
 .hero__start {
   position: relative; z-index: 1;
   max-width: var(--wrap); margin: clamp(2.5rem, 6vw, 4.5rem) auto 0;
-  padding-left: calc(var(--rail) + clamp(1.25rem, 3vw, 2.5rem));
+  padding-left: calc(var(--road-w) + clamp(1.25rem, 3vw, 2.5rem));
   padding-bottom: clamp(1.5rem, 3vw, 2.5rem);
   font-size: .8125rem; color: var(--ink-soft);
 }
@@ -548,7 +551,7 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
   .hero__shot { aspect-ratio: 16 / 10; min-height: 0; }
   .hero__shot.cutout { aspect-ratio: 4 / 5; min-height: 0; }
   .hero__title { margin-left: 0; }
-  .hero__road::before { top: 52%; }
+  .hero__road::before { top: 62%; width: clamp(56px, 16vw, 84px); }
   .signup__inner { grid-template-columns: 1fr; }
   .foot__inner { grid-template-columns: 1fr; }
   .facts__item { grid-template-columns: 1fr; gap: .375rem; }
