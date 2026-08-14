@@ -68,6 +68,15 @@
     Array.prototype.forEach.call(revealables, function (el) { io.observe(el); });
   }
 
+  /* ---- optional photography: a slot fills itself once the file exists ---- */
+  Array.prototype.forEach.call(document.querySelectorAll('img[data-optional]'), function (img) {
+    var slot = img.closest('.slot');
+    if (!slot) return;
+    var fill = function () { slot.setAttribute('data-filled', ''); };
+    if (img.complete && img.naturalWidth > 0) fill();
+    else img.addEventListener('load', fill);
+  });
+
   /* ---- form: name the problem and the way out ---- */
   var form = document.querySelector('[data-form]');
   if (!form) return;

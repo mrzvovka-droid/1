@@ -64,10 +64,11 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
           <a class="btn btn--ghost" href="#route">Как проходит обучение</a>
         </div>
       </div>
-      <figure class="hero__shot slot" data-slot="Фото автопарка">
+      <figure class="hero__shot slot cutout" data-slot="Фото автопарка">
+        <img src="img/instructor.png" alt="Инструктор автошколы «Вымпел» у учебного автомобиля" data-optional>
         <div class="slot__body">
           <span class="slot__tag">Заглушка</span>
-          <p class="slot__note">Кадр автопарка из съёмки заказчика</p>
+          <p class="slot__note">Обтравленный кадр: инструктор у учебного автомобиля. Положить файл в <code>site/img/instructor.png</code></p>
         </div>
       </figure>
     </div>
@@ -103,14 +104,11 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
             <p>На тебя не будут кричать и не будут вздыхать на десятый одинаковый вопрос.
               Если с инструктором не совпали характерами — меняем, это нормально и
               обсуждается спокойно.</p>
-            <figure class="stop__shot slot cutout" data-slot="Фото инструктора">
-              <!-- Замена на продакшене: удалить блок .slot__body и вставить
-                   <img src="instructor.png" alt="Инструктор автошколы «Вымпел»">
-                   Требования к файлу: PNG с прозрачным фоном, человек обтравлен
-                   по контуру, кадр по пояс, обрез по нижнему краю. -->
+            <figure class="stop__shot slot cutout cutout--face" data-slot="Фото инструктора">
+              <img src="img/instructor.png" alt="Инструктор автошколы «Вымпел»" data-optional>
               <div class="slot__body">
                 <span class="slot__tag">Заглушка</span>
-                <p class="slot__note">Портрет инструктора: обтравка на фирменном поле, обрез по нижнему краю</p>
+                <p class="slot__note">Тот же обтравленный кадр, кроп на человека. Положить файл в <code>site/img/instructor.png</code></p>
               </div>
             </figure>
           </div>

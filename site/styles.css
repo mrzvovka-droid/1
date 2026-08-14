@@ -200,10 +200,20 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
   content: ""; position: absolute; left: 0; right: 0; bottom: 0;
   height: 2px; background: var(--orange);
 }
+/* The real photograph is absent until the client drops it in, so every slot
+   ships its marked placeholder and swaps itself the moment the file loads. */
+.slot img { display: none; }
+.slot[data-filled] img { display: block; }
+.slot[data-filled] .slot__body { display: none; }
+.slot[data-filled] { border-color: transparent; }
+
 .cutout img {
-  display: block; width: 100%; height: 100%;
+  width: 100%; height: 100%;
   object-fit: contain; object-position: bottom;
 }
+/* Stop 02 wants the person, not the car, so the same file is cropped upward. */
+.cutout--face img { object-fit: cover; object-position: 50% 12%; }
+.hero__shot.cutout { background: var(--sand); aspect-ratio: 4 / 3; }
 .cutout .slot__body { align-self: center; padding: 1.5rem; }
 .cutout .slot__tag { color: #8f3208; }
 .cutout .slot__note { color: #4a4436; }
