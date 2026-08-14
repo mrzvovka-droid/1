@@ -207,13 +207,24 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
 .slot[data-filled] .slot__body { display: none; }
 .slot[data-filled] { border-color: transparent; }
 
+/* Absolute so the height resolves against the box: as a grid item the image
+   sized itself from its own aspect and overflowed the field. */
 .cutout img {
+  position: absolute; inset: 0;
   width: 100%; height: 100%;
   object-fit: contain; object-position: bottom;
 }
 /* Stop 02 wants the person, not the car, so the same file is cropped upward. */
-.cutout--face img { object-fit: cover; object-position: 50% 12%; }
-.hero__shot.cutout { background: var(--sand); aspect-ratio: 4 / 3; }
+.cutout--face img { object-fit: cover; object-position: 50% 14%; }
+
+/* In the hero the cut-out needs no field at all: it stands directly on the
+   page, which is the whole point of cutting the background away. */
+.hero__shot.cutout {
+  background: transparent; border: 0; aspect-ratio: auto;
+  padding: 0; overflow: visible;
+}
+.hero__shot.cutout::after { content: none; }
+.hero__shot.cutout img { object-position: right bottom; }
 .cutout .slot__body { align-self: center; padding: 1.5rem; }
 .cutout .slot__tag { color: #8f3208; }
 .cutout .slot__note { color: #4a4436; }
@@ -435,6 +446,7 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
 @media (max-width: 900px) {
   .hero__inner { grid-template-columns: 1fr; align-items: start; min-height: 0; }
   .hero__shot { aspect-ratio: 16 / 10; min-height: 0; }
+  .hero__shot.cutout { aspect-ratio: 4 / 5; min-height: 0; }
   .hero__title { margin-left: 0; }
   .hero__road::before { top: 52%; }
   .signup__inner { grid-template-columns: 1fr; }
